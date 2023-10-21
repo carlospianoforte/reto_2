@@ -1,3 +1,10 @@
+body {
+  background-image: url(https://img.freepik.com/vector-gratis/clinica-veterinaria-medico-mascotas-enfermas_107791-11715.jpg?size=626&ext=jpg&ga=GA1.1.1335832033.1678119646&semt=ais);
+  background-size: auto; 
+  background-attachment: fixed;
+  height: 100vh;
+  
+}
 .app {
   display: flex;
   justify-content: center;
@@ -22,10 +29,14 @@
 }
 
 .cita-form {
-  background-color: #f4f4f4;
-  padding: 20px;
+  background:linear-gradient(0deg, rgba(34,78,195,0.7399334733893557) 0%, rgba(45,248,253,1) 100%);
+  padding: 30px;
+  width: 280px;
+  height: 470px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+  border-radius: 10px;
+  border: 2px solid rgb(26, 2, 94);
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 
   label {
     display: block;

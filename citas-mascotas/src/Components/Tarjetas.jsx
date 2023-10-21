@@ -1,4 +1,4 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 import '../App.scss';
 
 const Tarjetas = ({ citas }) => {
@@ -17,5 +17,7 @@ const Tarjetas = ({ citas }) => {
     </div>
   );
 };
-
+Tarjetas.propTypes = {
+  citas: PropTypes.array.isRequired, // Valida que 'citas' sea un array y sea requerido
+};
 export default Tarjetas;
