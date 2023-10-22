@@ -16,7 +16,7 @@ function App() {
     <div className="app">
       <Cita agregarCita={agregarCita} />
       <Tarjetas citas={citas} />
-      <Footer citas={citas} />
+      <Footer />
     </div>
   );
 }
