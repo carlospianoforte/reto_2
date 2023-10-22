@@ -3,8 +3,9 @@ import '../App.scss';
 
 const Tarjetas = ({ citas }) => {
   return (
+    <>
+    <div><h2>Lista de Citas</h2></div> 
     <div className="lista-citas">
-      <h2>Lista de Citas</h2>
       {citas.map((cita, index) => (
         <div key={index} className="cita-card">
           <h3>{cita.nombreMascota}</h3>
@@ -15,6 +16,7 @@ const Tarjetas = ({ citas }) => {
         </div>
       ))}
     </div>
+    </>
   );
 };
 Tarjetas.propTypes = {

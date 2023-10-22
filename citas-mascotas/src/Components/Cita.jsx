@@ -13,30 +13,22 @@ const Cita = ({ agregarCita }) => {
 
   const validarCampos = () => {
     const nuevosErrores = {};
-
-    if (nombreMascota === "") {
-      nuevosErrores.nombreMascota = "El nombre de la mascota es obligatorio";
-    }
-
-    if (edad === "") {
-      nuevosErrores.edad = "La edad es obligatoria";
-    }
-
-    if (genero === "") {
-      nuevosErrores.genero = "El género es obligatorio";
-    }
-
-    if (diaCita === "") {
-      nuevosErrores.diaCita = "El día de la cita es obligatorio";
-    }
-
-    if (nombreDuenio === "") {
-      nuevosErrores.nombreDuenio = "El nombre del dueño es obligatorio";
-    }
-
+  
+    const validarCampo = (campo, valor, mensaje) => {
+      if (valor === "") {
+        nuevosErrores[campo] = mensaje;
+      }
+    };
+  
+    validarCampo("nombreMascota", nombreMascota, "El nombre de la mascota es obligatorio");
+    validarCampo("edad", edad, "La edad es obligatoria");
+    validarCampo("genero", genero, "El género es obligatorio");
+    validarCampo("diaCita", diaCita, "El día de la cita es obligatorio");
+    validarCampo("nombreDuenio", nombreDuenio, "El nombre del dueño es obligatorio");
+  
     setErrores(nuevosErrores);
-
-    console.log(`esto  retorne el ${Object.keys(nuevosErrores).length}`);
+  
+    console.log(`esto retorna el ${Object.keys(nuevosErrores).length}`);
     return Object.keys(nuevosErrores).length === 0;
   };
 

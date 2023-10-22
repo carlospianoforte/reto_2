@@ -14,10 +14,20 @@ body {
 }
 
 .lista-citas {
+  width: 820px;
+  height: 300px;
   background-color: #f4f4f4;
   padding: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  display: grid;
+  grid-template-columns: repeat(3, 250px);
+  grid-gap: 30px;
+  overflow-y: scroll;
+  opacity: .9;
+
+
+
 
   .cita-card {
     background-color: #fff;
@@ -28,9 +38,22 @@ body {
   }
 }
 
+.lista-citas::-webkit-scrollbar{
+  width: 10px;
+  //background-color:  rgba(56, 86, 170, 0.644);
+  //overflow-y: scroll;
+}
+
+.lista-citas::-webkit-scrollbar-thumb{
+  background-color:  rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  border-bottom: 2px solid ;
+}
+
 .cita-form {
   background:linear-gradient(0deg, rgba(34,78,195,0.7399334733893557) 0%, rgba(45,248,253,1) 100%);
   padding: 30px;
+  padding-right: 50px;
   width: 280px;
   height: 470px;
   border: 1px solid #ccc;
@@ -66,5 +89,16 @@ body {
 
   .error {
     color: red;
+    line-height:0;
   }
+}
+
+.Footer{
+  color: red;
+  margin-top:20px;
+  text-align: center;
+  width:100%;
+  font-size: 20px;
+  //font-weight: bold;
+
 }
