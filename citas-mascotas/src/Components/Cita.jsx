@@ -84,7 +84,7 @@ const Cita = ({ agregarCita }) => {
         </div>
         <div>
           <label>Género</label>
-          <select name="genero" value={genero} onChange={(e) => setGenero(e.target.value)}>
+          <select className="genero" name="genero" value={genero} onChange={(e) => setGenero(e.target.value)}>
             <option value="">Seleccione el género</option>
             <option value="Masculino">Masculino</option>
             <option value="Femenino">Femenino</option>

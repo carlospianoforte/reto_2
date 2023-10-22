@@ -55,7 +55,7 @@ body {
   padding: 30px;
   padding-right: 50px;
   width: 280px;
-  height: 470px;
+  height: auto;
   border: 1px solid #ccc;
   border-radius: 10px;
   border: 2px solid rgb(26, 2, 94);
@@ -90,7 +90,13 @@ body {
   .error {
     color: red;
     line-height:0;
+    font-size: 14px;
+    margin-top: auto;
   }
+}
+
+.genero {
+    margin-bottom: 10px;
 }
 
 .Footer{
